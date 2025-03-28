@@ -90,6 +90,5 @@ impl NotificationService {
         return thread::spawn(move || Self::unsubscribe_request(product_type_clone))
             .join().unwrap();
     }
-    
 }    
 
